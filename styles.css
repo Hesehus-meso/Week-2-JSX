@@ -1,9 +1,11 @@
+/* Normalize sizing and remove browser-default spacing. */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Center the pricing layout on a full-height, softly tinted canvas. */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Keep the plan cards aligned in a horizontal row. */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Shared surface and dimensions for each pricing plan. */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Stack a plan's title, price, and feature details. */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Plan name hierarchy. */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Price row with room for an optional billing period. */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Main price value. */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Smaller billing interval beside the price. */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Space between plan details and the action button. */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Introductory label above each feature list. */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Remove default bullets from the included features. */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Align each feature label with its checkmark. */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Feature-list checkmark styling. */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Shared button shape, spacing, and hover transition. */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,23 +124,28 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Subtle feedback for hovering over a button. */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Pressed state for pointer or touch interaction. */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* High-contrast action for the featured paid plan. */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Hover feedback for the primary action. */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Pressed state for the primary action. */
 .download-button.primary:active {
     background-color: #333;
 }
@@ -144,6 +164,7 @@ body {
     background-color: #D8D6CE;
 }
 
+/* Fixed page-version label at the top center. */
 .page-label {
     position: fixed;
     top: 16px;
@@ -157,6 +178,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Emphasize the version name inside the label. */
 .page-label strong {
     color: #333;
 }
